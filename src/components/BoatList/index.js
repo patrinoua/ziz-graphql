@@ -57,7 +57,7 @@ const BoatList = () => {
                 <>
                   <SearchBar>
                     <Typography id='range-slider' gutterBottom>
-                      Filter by length
+                      Filter by length: {length[0]}-{length[1]}m
                     </Typography>
                     <Slider
                       min={2}
@@ -68,7 +68,7 @@ const BoatList = () => {
                       aria-labelledby='range-slider'
                     />
                     <Typography id='range-slider' gutterBottom>
-                      Filter by year
+                      Filter by year: {year[0]}-{year[1]}
                     </Typography>
                     <Slider
                       min={2000}
