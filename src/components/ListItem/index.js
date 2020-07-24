@@ -24,6 +24,10 @@ import {
 } from './elements'
 
 const ListItem = ({ item, length, year }) => {
+  let itemType = item.type
+  if (item.type.indexOf('_') > 0) {
+    itemType = item.type.split('_').join(' ')
+  }
   if (
     item.length >= length[0] &&
     item.length <= length[1] &&
@@ -38,7 +42,11 @@ const ListItem = ({ item, length, year }) => {
         <TdRight>
           <InnerTr>
             <InnerTdLeft>
-              <H2>{item.name}</H2>
+              <H2>
+                {itemType.slice(0, 1) +
+                  itemType.slice(1, itemType.length).toLowerCase()}{' '}
+                {item.name} ({item.year})
+              </H2>
               <IconAndTextContainer>
                 {item.reviews.score} <StarRate /> <H5>Read Reviews</H5>
               </IconAndTextContainer>
