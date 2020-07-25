@@ -1,5 +1,7 @@
 # List Boats
 
+Visit the webpage: https://boat-list.web.app/
+
 To run this project
 
 install all dependencies
@@ -14,8 +16,7 @@ And then run
 npm start
 ```
 
-graphql endpoint: https://sls-sandbox.zizoo.com/graphql
------
+## graphql endpoint: https://sls-sandbox.zizoo.com/graphql
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
