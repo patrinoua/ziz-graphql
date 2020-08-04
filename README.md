@@ -1,5 +1,7 @@
 # List Boats
 
+Fullstack React App retrieving data from graphQL DB 
+
 Visit the webpage: https://boat-list.web.app/
 
 To run this project
